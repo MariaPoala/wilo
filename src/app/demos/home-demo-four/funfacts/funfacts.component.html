@@ -1,0 +1,20 @@
+<div
+    class="funfacts-area bg-image pt-100 pb-75"
+    style="background-image: url(images/funfacts/funfacts-bg.jpg);"
+>
+    <div class="container">
+        <div class="row">
+            @for (funfacts of singleFunfactsItem; track funfacts) {
+                <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                    <div class="single-funfact-item">
+                        <div class="icon">
+                            <img [src]="funfacts.icon" alt="image">
+                        </div>
+                        <h3>{{funfacts.title}}</h3>
+                        <p>{{funfacts.subTitle}}</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

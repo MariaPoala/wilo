@@ -1,0 +1,40 @@
+<div class="about-area res-pt-0 pb-100 pt-75">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                @for (image of aboutImage; track image) {
+                    <div class="about-img">
+                        <img [src]="image.img" alt="image">
+                        <div class="shape">
+                            <img src="images/about/shape1.png">
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    @for (content of aboutContent; track content) {
+                        <div class="content">
+                            <h2>{{content.title}}</h2>
+                            <p>{{content.paragraphText1}}</p>
+                            <ul class="content-list">
+                                @for (list of contentList; track list) {
+                                    <li>
+                                        <i class="{{list.icon}}"></i> {{list.title}}
+                                    </li>
+                                }
+                            </ul>
+                            <p>{{content.paragraphText2}}</p>
+                            <p>{{content.paragraphText3}}</p>
+                            <a routerLink="/{{content.defaultBtnLink}}" class="default-btn">
+                                <i class="{{content.defaultBtnIcon}}"></i>
+                                {{content.defaultBtnText}}
+                                <span></span>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

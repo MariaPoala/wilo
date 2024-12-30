@@ -1,0 +1,110 @@
+.funfacts-area {
+    z-index: 1;
+    position: relative;
+    background: {
+        color: var(--mainColor);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+}
+.single-funfact-item {
+    margin-bottom: 25px;
+    padding-left: 98px;
+    position: relative;
+
+    .icon {
+        transform: translateY(-50%);
+        position: absolute;
+        left: 20px;
+        top: 50%;
+    }
+    h3 {
+        color: var(--whiteColor);
+        margin-bottom: 3px;
+        font-size: 28px;
+    }
+    &::before {
+        top: 0;
+        width: 1px;
+        right: 10px;
+        content: '';
+        height: 100%;
+        position: absolute;
+        transform: rotate(25deg);
+        background-color: #402939;
+    }
+    p {
+        color: #a6a6b4;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .single-funfact-item {
+        text-align: center;
+        padding-left: 0;
+
+        .icon {
+            position: relative;
+            left: 0;
+            transform: unset;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        &::before {
+            display: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-funfact-item {
+        padding-left: 0;
+        text-align: center;
+
+        .icon {
+            position: relative;
+            left: 0;
+            top: 0;
+            transform: translateY(0);
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        &::before {
+            right: -25px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-funfact-item {
+        padding-left: 85px;
+
+        .icon {
+            left: 15px;
+
+            img {
+                width: 50px;
+            }
+        }
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 15px;
+        }
+        &::before {
+            right: -8px;
+        }
+    }
+
+}

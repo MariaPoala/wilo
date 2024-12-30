@@ -1,0 +1,51 @@
+<app-navbar />
+
+<app-inner-page-banner
+    [pageTitle]="'Team'"
+/>
+
+<!-- Team -->
+<div class="scientist-area pt-100 pb-75">
+    <div class="container">
+        <div class="row justify-content-center">
+            @for (scientistBoxContent of singleScientistBox; track scientistBoxContent) {
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="single-scientist-box">
+                        <div class="image">
+                            <img [src]="scientistBoxContent.img" alt="image">
+                        </div>
+                        <div class="content">
+                            <h3>{{scientistBoxContent.title}}</h3>
+                            <span>{{scientistBoxContent.designation}}</span>
+                            <ul class="social">
+                                <li>
+                                    <a href="{{scientistBoxContent.facebookLink}}" class="d-block" target="_blank">
+                                        <i class='{{scientistBoxContent.facebookIcon}}'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{scientistBoxContent.twitterLink}}" class="d-block" target="_blank">
+                                        <i class='{{scientistBoxContent.twitterIcon}}'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{scientistBoxContent.instagramLink}}" class="d-block" target="_blank">
+                                        <i class='{{scientistBoxContent.instagramIcon}}'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{scientistBoxContent.linkedinLink}}" class="d-block" target="_blank">
+                                        <i class='{{scientistBoxContent.linkedinIcon}}'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- End Team -->
+
+<app-footer />

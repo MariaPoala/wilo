@@ -1,0 +1,63 @@
+<div class="about-area ptb-100">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                @for (image of aboutImage; track image) {
+                    <div class="about-image">
+                        <img [src]="image.img" alt="image">
+                    </div>
+                }
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    @for (content of aboutContent; track content) {
+                        <div class="content">
+                            <span class="sub-title">
+                                <img src="images/star-icon.png" alt="image"> {{content.subTitle}}
+                            </span>
+                            <h2>{{content.title}}</h2>
+                            <p>{{content.paragraphText1}}</p>
+                            <ul class="features-list">
+                                @for (list of featuresList; track list) {
+                                    <li>
+                                        <div class="inner">
+                                            <div class="icon">
+                                                <img [src]="list.icon" alt="image">
+                                            </div>
+                                            <h3>{{list.title}}</h3>
+                                            <p>{{list.subTitle}}</p>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                            <p>{{content.paragraphText2}}</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="about-inner-area">
+            <div class="row">
+                @for (text of aboutText; track text) {
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="about-text">
+                            <h3>{{text.title}}</h3>
+                            <p>{{text.paragraphText}}</p>
+                            <ul class="features-list">
+                                <li><i class="{{text.icon}}"></i> {{text.featuresList1}}</li>
+                                <li><i class="{{text.icon}}"></i> {{text.featuresList2}}</li>
+                                <li><i class="{{text.icon}}"></i> {{text.featuresList3}}</li>
+                                <li><i class="{{text.icon}}"></i> {{text.featuresList1}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="circle-shape1">
+        <img src="images/shape/circle-shape1.png" alt="image">
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<app-navbar />
+
+<app-inner-page-banner
+    [pageTitle]="'Services'"
+/>
+
+<!-- Services -->
+<div class="solutions-area pt-100 pb-75">
+    <div class="container">
+        <div class="row">
+            @for (solutionsBoxContent of singleSolutionsBox; track solutionsBoxContent) {
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-solution-box">
+                        <div class="icon">
+                            <i class="{{solutionsBoxContent.icon}}"></i>
+                        </div>
+                        <h3><a routerLink="/{{solutionsBoxContent.link}}">{{solutionsBoxContent.title}}</a></h3>
+                        <p>{{solutionsBoxContent.paragraphText}}</p>
+                        <a routerLink="/{{solutionsBoxContent.link}}" class="view-details-btn">{{solutionsBoxContent.linkText}}</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- End Services -->
+
+<app-get-started />
+
+<app-footer />

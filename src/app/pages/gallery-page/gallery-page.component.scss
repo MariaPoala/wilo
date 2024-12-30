@@ -1,0 +1,16 @@
+.single-gallery-item {
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: zoom-in;
+        
+    img {
+        transition: var(--transition);
+    }
+    &:hover {
+        img {
+            transform: scale(1.1);
+            filter: blur(2px);
+        }
+    }
+}

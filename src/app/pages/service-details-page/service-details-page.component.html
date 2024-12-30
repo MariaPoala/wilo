@@ -1,0 +1,113 @@
+<app-navbar />
+
+<app-inner-page-banner
+    [pageTitle]="'Service Details'"
+/>
+
+<!-- Service Details -->
+<div class="service-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                @for (detailsImage of serviceDetailsImage; track detailsImage) {
+                    <div class="service-details-image">
+                        <img [src]="detailsImage.img" alt="image">
+                    </div>
+                }
+                @for (detailsDesc of serviceDetailsDesc; track detailsDesc) {
+                    <div class="service-details-desc">
+                        <span class="sub-title">{{detailsDesc.subTitle}}</span>
+                        <h3>{{detailsDesc.title1}}</h3>
+                        <p>{{detailsDesc.paragraphText1}}</p>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="image">
+                                    <img [src]="detailsDesc.img1" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="content">
+                                    <h3>{{detailsDesc.title2}}</h3>
+                                    <ul>
+                                        @for (importantFacts of serviceDetailsDescImportantFacts; track importantFacts) {
+                                            <li>
+                                                {{importantFacts.title}}
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p>{{detailsDesc.paragraphText2}}</p>
+                        <h3>{{detailsDesc.title3}}</h3>
+                        <div class="row">
+                            @for (application of serviceDetailsDescApplication; track application) {
+                                <div class="col-lg-4 col-sm-6 col-md-6">
+                                    <div class="single-industry-box">
+                                        <div class="icon">
+                                            <i class="{{application.icon}}"></i>
+                                        </div>
+                                        {{application.title}}
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <h3>{{detailsDesc.title4}}</h3>
+                        <ul class="technologies-features">
+                            @for (technologiesFeatures of serviceDetailsDescTechnologiesFeatures; track technologiesFeatures) {
+                                <li>
+                                    <span>{{technologiesFeatures.title}}</span>
+                                </li>
+                            }
+                        </ul>
+                        <div class="charts-image">
+                            <img [src]="detailsDesc.img2" alt="image">
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="service-details-info">
+                    <ul class="services-list">
+                        @for (servicesList of sidebarServicesList; track servicesList) {
+                            <li>
+                                <a routerLink="/{{servicesList.link}}">{{servicesList.title}}</a>
+                            </li>
+                        }
+                    </ul>
+                    <div class="download-file">
+                        <h3>Brochures</h3>
+                        <ul>
+                            @for (downloadFile of sidebarDownloadFile; track downloadFile) {
+                                <li>
+                                    <a routerLink="/{{downloadFile.link}}">
+                                        {{downloadFile.title}} <i class='{{downloadFile.icon}}'></i>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="services-contact-info">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            @for (contactInfo of sidebarContactInfo; track contactInfo) {
+                                <li>
+                                    <div class="icon">
+                                        <i class='{{contactInfo.icon}}'></i>
+                                    </div>
+                                    <span>{{contactInfo.title}}:</span>
+                                    {{contactInfo.subTitle}}
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Service Details -->
+
+<app-related-services />
+
+<app-footer />

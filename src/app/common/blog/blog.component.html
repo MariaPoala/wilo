@@ -1,0 +1,49 @@
+<div
+    class="blog-area pt-100 pb-75 bg-fffbf5"
+    [ngClass]="{'bg-white': router.url === '/index-4'}"
+>
+    <div class="container">
+        @for (sectionTitleContent of sectionTitle; track sectionTitleContent) {
+            <div class="section-title">
+                <span class="sub-title">
+                    <img src="images/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}
+                </span>
+                <h2>{{sectionTitleContent.title}}</h2>
+                <p>{{sectionTitleContent.paragraphText}}</p>
+            </div>
+        }
+        <div class="row align-items-center justify-content-center">
+            @for (blogPostContent of singleBlogPost; track blogPostContent) {
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-post">
+                        <div class="post-image">
+                            <a routerLink="/{{blogPostContent.postLink}}">
+                                <img [src]="blogPostContent.postImg" alt="image">
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <ul class="post-meta d-flex justify-content-between align-items-center">
+                                <li>
+                                    <div class="post-author d-flex align-items-center">
+                                        <img [src]="blogPostContent.postAuthorImage" class="rounded-circle" alt="image">
+                                        <span>{{blogPostContent.postAuthorName}}</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class='flaticon-calendar'></i> {{blogPostContent.postDate}}
+                                </li>
+                            </ul>
+                            <h3><a routerLink="/{{blogPostContent.postLink}}">{{blogPostContent.postTitle}}</a></h3>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="vector-shape1">
+        <img src="images/shape/vector-shape1.png" alt="image">
+    </div>
+    <div class="vector-shape2">
+        <img src="images/shape/vector-shape2.png" alt="image">
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="upcoming-bootcamps-area ptb-100 bg-fafafb">
+    <div class="container">
+        @for (content of bootcampsContent; track content) {
+            <div class="upcoming-bootcamps-content">
+                <h2>{{content.title}}</h2>
+                <a routerLink="/{{content.defaultBtnLink}}" class="default-btn">
+                    <i class="{{content.defaultBtnIcon}}"></i>
+                    {{content.defaultBtnText}}
+                    <span></span>
+                </a>
+            </div>
+        }
+    </div>
+</div>

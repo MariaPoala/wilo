@@ -1,0 +1,42 @@
+<div class="hero-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                @for (content of heroBannerContent; track content) {
+                    <div class="hero-banner-content">
+                        <h1 class="animate__animated animate__fadeInLeft">{{content.title}}</h1>
+                        <p class="animate__animated animate__fadeInLeft">{{content.paragraphText}}</p>
+                        <div class="btn-box">
+                            <a routerLink="/{{content.defaultBtnLink}}" class="default-btn animate__animated animate__fadeInRight">
+                                <i class="{{content.defaultBtnIcon}}"></i>
+                                {{content.defaultBtnText}}
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="hero-banner-image">
+                    <img src="images/main-banner/banner-three/img1.png" class="animate__animated animate__fadeInUp" alt="image">
+                    <img src="images/main-banner/banner-three/img2.png" class="animate__animated animate__fadeInUp" alt="image">
+                    <img src="images/main-banner/banner-three/img3.png" class="animate__animated animate__fadeInUp" alt="image">
+                    <img src="images/main-banner/banner-three/img4.png" class="animate__animated animate__fadeInDown" alt="image">
+                    <img src="images/main-banner/banner-three/img5.png" class="animate__animated animate__fadeInLeft" alt="image">
+                    <img src="images/main-banner/banner-three/img6.png" class="animate__animated animate__fadeInDown"alt="image">
+                    <img src="images/main-banner/banner-three/img7.png" class="animate__animated animate__fadeInDown" alt="image">
+                    <img src="images/main-banner/banner-three/img8.png" class="animate__animated animate__fadeInDown" alt="image">
+                    <img src="images/main-banner/banner-three/img9.png" class="animate__animated animate__fadeInDown" alt="image">
+                    <img src="images/main-banner/banner-three/img10.png" class="animate__animated animate__fadeInDown" alt="image">
+                    <img src="images/main-banner/banner-three/main-pic.png" class="animate__animated animate__fadeInUp" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vector-shape7 animate__animated animate__fadeInLeft">
+        <img src="images/shape/vector-shape7.png" alt="image">
+    </div>
+    <div class="vector-shape8 animate__animated animate__fadeInDown">
+        <img src="images/shape/vector-shape8.png" alt="image">
+    </div>
+</div>

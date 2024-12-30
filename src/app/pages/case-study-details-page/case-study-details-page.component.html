@@ -1,0 +1,72 @@
+<app-navbar />
+
+<app-inner-page-banner
+    [pageTitle]="'Case Study Details'"
+/>
+
+<!-- Case Study Details -->
+<div class="case-study-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                @for (image of caseStudyDetailsImage; track image) {
+                    <div class="case-study-details-image">
+                        <img [src]="image.img" alt="image">
+                    </div>
+                }
+                @for (detailsDesc of caseStudyDetailsDesc; track detailsDesc) {
+                    <div class="case-study-details-desc">
+                        <span class="sub-title">{{detailsDesc.subTitle}}</span>
+                        <h3>{{detailsDesc.title1}}</h3>
+                        <p>{{detailsDesc.paragraph1}}</p>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="image">
+                                    <img [src]="detailsDesc.img1" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="content">
+                                    <h3>{{detailsDesc.title2}}</h3>
+                                    <ul>
+                                        @for (importantFacts of caseStudyDetailsDescImportantFacts; track importantFacts) {
+                                            <li>
+                                                {{importantFacts.title}}
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p>{{detailsDesc.paragraph2}}</p>
+                        <p>{{detailsDesc.paragraph3}}</p>
+                        <h3>{{detailsDesc.title3}}</h3>
+                        <p>{{detailsDesc.paragraph4}}</p>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="case-study-sidebar-sticky">
+                    <div class="case-study-details-info">
+                        <ul>
+                            @for (info of caseStudyDetailsInfo; track info) {
+                                <li>
+                                    <div class="icon">
+                                        <i class='{{info.icon}}'></i>
+                                    </div>
+                                    <span>{{info.title}}:</span>
+                                    {{info.subTitle}}
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Case Study Details -->
+
+<app-related-case-studies />
+
+<app-footer />

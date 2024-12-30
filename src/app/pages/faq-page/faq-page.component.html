@@ -1,0 +1,75 @@
+<app-navbar />
+
+<app-inner-page-banner
+    [pageTitle]="'Frequently Asked Questions'"
+/>
+
+<!-- FAQ -->
+<div class="faq-area ptb-100">
+    <div class="container">
+        <div class="faq-accordion">
+            <ul class="accordion">
+                <li class="accordion-item">
+                    <button class="accordion-title" type="button" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                        <i class='bx bx-chevron-down'></i>
+                        Q1. What is Data Science? List the differences between supervised and unsupervised learning.
+                    </button>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(0) }">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <button class="accordion-title" type="button" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                        <i class='bx bx-chevron-down'></i>
+                        Q2. What is Selection Wilo.com?
+                    </button>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(1) }">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <button class="accordion-title" type="button" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                        <i class='bx bx-chevron-down'></i>
+                        Q3. What is wilo-variance trade-off?
+                    </button>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(2) }">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <button class="accordion-title" type="button" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                        <i class='bx bx-chevron-down'></i>
+                        Q4. What is a confusion matrix?
+                    </button>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(3) }">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <button class="accordion-title" type="button" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                        <i class='bx bx-chevron-down'></i>
+                        Q5. What is the difference between “long” and “wide” format data?
+                    </button>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(4) }">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End FAQ -->
+
+<app-get-started />
+
+<app-footer />

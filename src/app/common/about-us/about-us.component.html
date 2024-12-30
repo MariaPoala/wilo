@@ -1,0 +1,48 @@
+<div class="about-area pb-100">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                @for (image of aboutImage; track image) {
+                    <div class="about-image">
+                        <img [src]="image.img" alt="image">
+                    </div>
+                }
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    @for (content of aboutContent; track content) {
+                        <div class="content">
+                            <span class="sub-title">
+                                <img src="images/star-icon.png" alt="image"> {{content.subTitle}}
+                            </span>
+                            <h2>{{content.title}}</h2>
+                            <p>{{content.paragraphText1}}</p>
+                            <ul class="features-list">
+                                @for (list of featuresList; track list) {
+                                    <li>
+                                        <div class="inner">
+                                            <div class="icon">
+                                                <img [src]="list.icon" alt="image">
+                                            </div>
+                                            <h3>{{list.title}}</h3>
+                                            <p>{{list.subTitle}}</p>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                            <p>{{content.paragraphText2}}</p>
+                            <a routerLink="/{{content.defaultBtnLink}}" class="default-btn">
+                                <i class="{{content.defaultBtnIcon}}"></i>
+                                {{content.defaultBtnText}}
+                                <span></span>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle-shape1">
+        <img src="images/shape/circle-shape1.png" alt="image">
+    </div>
+</div>

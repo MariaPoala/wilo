@@ -1,0 +1,30 @@
+<div class="services-area ptb-100">
+    <div class="container">
+        @for (sectionTitleContent of sectionTitle; track sectionTitleContent) {
+            <div class="section-title">
+                <h2>{{sectionTitleContent.title}}</h2>
+                <p>{{sectionTitleContent.paragraphText}}</p>
+            </div>
+        }
+        <div class="row justify-content-center">
+            @for (servicesBoxContent of singleServicesBoxItem; track servicesBoxContent) {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-service-box-item">
+                        <div class="icon">
+                            <img [src]="servicesBoxContent.icon" alt="image">
+                        </div>
+                        <h3><a routerLink="/{{servicesBoxContent.link}}">{{servicesBoxContent.title}}</a></h3>
+                        <p>{{servicesBoxContent.paragraphText}}</p>
+                        <a routerLink="/{{servicesBoxContent.link}}" class="learn-more-btn">
+                            <i class="{{servicesBoxContent.linkIcon}}"></i>
+                            {{servicesBoxContent.linkText}}
+                        </a>
+                        <div class="shape">
+                            <img src="images/services/shape4.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
