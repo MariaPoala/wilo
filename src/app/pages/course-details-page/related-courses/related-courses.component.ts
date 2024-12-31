@@ -23,7 +23,7 @@ export class RelatedCoursesComponent {
             coursePriceClass: 'free',
             authorImg: 'images/user1.jpg',
             authorName: 'Alex Morgan',
-            title: 'Introduction to Quantitative Methods',
+            title: 'Introduction to Quantitative Methodss',
             link: 'courses-details',
             paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
             courseDuration: '8 Weeks Long',
