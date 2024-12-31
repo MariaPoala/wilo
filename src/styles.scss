@@ -16,6 +16,11 @@ body {
         family: var(--fontFamily);
     };
 }
+.imgabout {
+    width: 945px;
+    height: 660px;
+    object-fit: cover;
+}
 img {
     max-width: 100%;
     height: auto;

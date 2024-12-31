@@ -37,7 +37,7 @@ export class CaseStudiesComponent {
             link: 'case-study-details',
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
-            img: 'images/case-study/img1.jpg'
+            img: 'images/case-study/img4.jpg'
         },
         {
             subTitle: 'Case study #2',
@@ -47,7 +47,7 @@ export class CaseStudiesComponent {
             link: 'case-study-details',
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
-            img: 'images/case-study/img2.jpg'
+            img: 'images/case-study/img4.jpg'
         }
     ]
 

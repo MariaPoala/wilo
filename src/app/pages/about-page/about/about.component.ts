@@ -13,7 +13,7 @@ export class AboutComponent {
 
     aboutImage = [
         {
-            img: 'images/about/img1.png'
+            img: 'images/about/img6.jpg'
         }
     ]
     aboutContent = [
