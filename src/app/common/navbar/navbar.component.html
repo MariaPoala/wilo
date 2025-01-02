@@ -230,7 +230,7 @@
 >
     <div class="offcanvas-header">
         <a routerLink="/" class="logo d-inline-block">
-            <img src="images/logo.png" alt="logo">
+            <!-- <img src="images/logo1.png" alt="logo"> -->
         </a>
         <button
             type="button"
@@ -243,13 +243,21 @@
     <div class="offcanvas-body">
         <div class="accordion">
             <div class="accordion-item rounded-0 border-0">
+                <a routerLink="/" class="accordion-button without-icon d-block text-start shadow-none fw-bold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Inicio
+                </a>
+            </div>
+            <!-- <div class="accordion-item rounded-0 border-0">
+                <a routerLink="/" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">
+                    Inicio
+                </a>
                 <button
                     type="button"
                     (click)="toggleSection(0)"
                     [ngClass]="{ 'open': isSectionOpen(0) }"
                     class="accordion-button d-block text-start shadow-none fw-bold border-0 transition border-radius"
                 >
-                    Home
+                    Inicio
                 </button>
                 <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
                     <div class="accordion-body">
@@ -277,13 +285,28 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="accordion-item rounded-0 border-0">
                 <a routerLink="/about-us" class="accordion-button without-icon d-block text-start shadow-none fw-bold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                    About Us
+                    Nosotros
                 </a>
             </div>
             <div class="accordion-item rounded-0 border-0">
+                <a routerLink="/servicio" class="accordion-button without-icon d-block text-start shadow-none fw-bold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Servicios
+                </a>
+            </div>
+            <div class="accordion-item rounded-0 border-0">
+                <a routerLink="/courses" class="accordion-button without-icon d-block text-start shadow-none fw-bold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Proyectos
+                </a>
+            </div>
+            <div class="accordion-item rounded-0 border-0">
+                <a routerLink="/contact-us" class="accordion-button without-icon d-block text-start shadow-none fw-bold border-0 transition border-radius" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    Contacto
+                </a>
+            </div>
+            <!-- <div class="accordion-item rounded-0 border-0">
                 <button
                     type="button"
                     (click)="toggleSection(1)"
@@ -468,9 +491,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="others-option">
+        <!-- <div class="others-option">
             <div class="option-item">
                 <form class="search-box">
                     <input type="text" class="input-search" placeholder="Search here...">
@@ -486,7 +509,7 @@
                     <span></span>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <div class="offcanvas-backdrop fade" [class.show]="classApplied"></div>
