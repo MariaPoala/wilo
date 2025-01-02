@@ -1,7 +1,7 @@
 <app-navbar />
 
 <app-inner-page-banner
-    [pageTitle]="'Contact Us'"
+    [pageTitle]="'Contacto'"
 />
 
 <!-- Contact Info -->
@@ -29,8 +29,8 @@
                         <i class='{{InfoBox2.icon}}'></i>
                     </div>
                     <h3>{{InfoBox2.title}}</h3>
-                    <p>Mobile: <a href="tel:{{InfoBox2.number}}">{{InfoBox2.number}}</a></p>
-                    <p>E-mail: <a href="mailto:{{InfoBox2.email}}">{{InfoBox2.email}}</a></p>
+                    <p>Celular: <a href="tel:{{InfoBox2.number}}">{{InfoBox2.number}}</a></p>
+                    <p>Correo: <a href="mailto:{{InfoBox2.email}}">{{InfoBox2.email}}</a></p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -57,7 +57,7 @@
         @for (sectionTitleContent of sectionTitle; track sectionTitleContent) {
             <div class="section-title">
                 <span class="sub-title">
-                    <img src="images/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}
+                    <img src="images/star-icon.png" alt="image" > {{sectionTitleContent.subTitle}}
                 </span>
                 <h2>{{sectionTitleContent.title}}</h2>
                 <p>{{sectionTitleContent.paragraphText}}</p>
@@ -67,7 +67,7 @@
             <div class="col-lg-6 col-md-12">
                 @for (image of contactImage; track image) {
                     <div class="contact-image">
-                        <img [src]="image.img" alt="image">
+                        <img [src]="image.img" alt="image" class="imgcon">
                     </div>
                 }
             </div>
@@ -77,28 +77,28 @@
                         <div class="row">
                             <div class="col-lg-12 col-md-6">
                                 <div class="form-group mb-3">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your name">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombres">
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-6">
                                 <div class="form-group mb-3">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your email address">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Correo">
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group mb-3">
-                                    <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Your phone number">
+                                    <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Celular">
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group mb-3">
-                                    <textarea name="message" id="message" class="form-control" cols="30" rows="6" placeholder="Write your message..."></textarea>
+                                    <textarea name="message" id="message" class="form-control" cols="30" rows="6" placeholder="Escribe tu mensaje.."></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <button type="submit" class="default-btn">
                                     <i class="flaticon-tick"></i>
-                                    Send Message
+                                    Enviar Mensaje
                                     <span></span>
                                 </button>
                             </div>

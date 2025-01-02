@@ -18,7 +18,7 @@ export class AboutComponent {
     ]
     aboutContent = [
         {
-            subTitle: 'About Us',
+            subTitle: 'Constrarna',
             title: 'Construyendo el Futuro con Innovación y Calidad',
             paragraphText1: 'En Constrarna, nos dedicamos a transformar ideas en proyectos tangibles, ofreciendo soluciones integrales en construcción, ferretería y alquiler de maquinaria. Nuestro compromiso es brindar excelencia en cada etapa, desde el diseño hasta la entrega final.',
             paragraphText2: 'Con una trayectoria destacada, trabajamos con los más altos estándares de calidad, adaptándonos a las necesidades de nuestros clientes y garantizando resultados que superen sus expectativas. En Constrarna, construimos más que espacios, creamos confianza.',

@@ -1,14 +1,10 @@
 <div class="history-area ptb-100 bg-fafafb">
     <div class="container">
-        @for (sectionTitleContent of sectionTitle; track sectionTitleContent) {
-            <div class="section-title">
-                <span class="sub-title">
-                    <img src="images/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}
-                </span>
-                <h2>{{sectionTitleContent.title}}</h2>
-                <p>{{sectionTitleContent.paragraphText}}</p>
+       
+            <div class="section-title">                
+                <h2>Nuestros Valores</h2>
             </div>
-        }
+        
         @for (timelineBlock of historyTimeline; track timelineBlock) {
             <ol class="timeline history-timeline">
                 <li class="timeline-block">

@@ -77,7 +77,7 @@ export class CaseStudiesComponent {
             linkText: 'Ver más detalles',
             linkIcon: 'flaticon-view',
             img: 'images/case-study/img4.jpg'
-        }
+        }  
     ]
 
 }

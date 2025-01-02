@@ -20,7 +20,7 @@ export class BannerComponent {
             defaultBtnLink: 'Sobre nosotros',
             optionalBtnIcon: 'flaticon-tick',
             optionalBtnText: 'Servicios',
-            optionalBtnLink: 'contact-us'
+            optionalBtnLink: 'servicio'
         }
     ]
 

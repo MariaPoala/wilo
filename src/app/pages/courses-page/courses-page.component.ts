@@ -16,77 +16,78 @@ export class CoursesPageComponent {
 
     singleCoursesBox = [
         {
-            courseImg: 'images/courses/img1.jpg',
-            coursePrice: 'Free',
+            courseImg: 'images/proyecto/proy1.jpg',
+            coursePrice: 'Consultas',
             coursePriceClass: 'free',
             authorImg: 'images/user1.jpg',
-            authorName: 'Alex Morgan',
-            title: 'Introduction to Quantitative Methodss',
-            link: 'course-details',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-            courseDuration: '8 Weeks Long',
-            studentApply: 'Available Now'
+            authorName: 'Cliente A',
+            title: 'Construcción de Viviendas Residenciales',
+            link: 'project-details',
+            paragraphText: 'Transformamos ideas en hogares cómodos y modernos, diseñados con funcionalidad y estilo para una vida excepcional.',
+            courseDuration: '12 meses',
+            studentApply: 'En Progreso'
         },
         {
-            courseImg: 'images/courses/img2.jpg',
-            coursePrice: '$49',
+            courseImg: 'images/proyecto/proy2.jpg',
+            coursePrice: '$50,000',
             coursePriceClass: 'paid',
             authorImg: 'images/user2.jpg',
-            authorName: 'Sarah Taylor',
-            title: 'Introduction to Linear Models and Matrix Algebra',
-            link: 'course-details',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-            courseDuration: '7 Weeks Long',
-            studentApply: 'Available Now'
+            authorName: 'Cliente B',
+            title: 'Diseño y Construcción de Oficinas Corporativas',
+            link: 'project-details',
+            paragraphText: 'Diseñamos y construimos oficinas adaptadas a las necesidades de tu empresa, con espacios funcionales y diseño moderno.',
+            courseDuration: '8 meses',
+            studentApply: 'Completado'
         },
         {
-            courseImg: 'images/courses/img3.jpg',
-            coursePrice: '$69',
+            courseImg: 'images/proyecto/proy1.jpg',
+            coursePrice: '$100,000',
             coursePriceClass: 'paid',
             authorImg: 'images/user3.jpg',
-            authorName: 'David Warner',
-            title: 'Data Science: Inference and Modeling',
-            link: 'course-details',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-            courseDuration: '2 Weeks Long',
-            studentApply: 'Not Available'
+            authorName: 'Cliente C',
+            title: 'Restauración de Hotel Boutique',
+            link: 'project-details',
+            paragraphText: 'Restauramos un hotel histórico, fusionando la tradición con el confort y lujo moderno para una experiencia única.',
+            courseDuration: '6 meses',
+            studentApply: 'Completado'
         },
         {
-            courseImg: 'images/courses/img4.jpg',
-            coursePrice: '$99',
+            courseImg: 'images/proyecto/proy7.jpg',
+            coursePrice: '$75,000',
             coursePriceClass: 'paid',
             authorImg: 'images/user1.jpg',
-            authorName: 'Alex Morgan',
-            title: 'The Data Science Course: Complete Data Science',
-            link: 'course-details',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-            courseDuration: '8 Weeks Long',
-            studentApply: 'Available Now'
+            authorName: 'Cliente D',
+            title: 'Centro Comercial Plaza Norte',
+            link: 'project-details',
+            paragraphText: 'Desarrollamos espacios comerciales modernos, pensados para mejorar la experiencia del cliente y la rentabilidad del negocio.',
+            courseDuration: '14 meses',
+            studentApply: 'En Progreso'
         },
         {
-            courseImg: 'images/courses/img5.jpg',
-            coursePrice: '$49',
+            courseImg: 'images/proyecto/proy5.jpg',
+            coursePrice: '$200,000',
             coursePriceClass: 'paid',
             authorImg: 'images/user2.jpg',
-            authorName: 'Sarah Taylor',
-            title: 'Java Programming Masterclass for Developers',
-            link: 'course-details',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-            courseDuration: '7 Weeks Long',
-            studentApply: 'Available Now'
+            authorName: 'Cliente E',
+            title: 'Construcción de Fábrica de Productos Industriales',
+            link: 'project-details',
+            paragraphText: 'Construimos fábricas adaptadas a las necesidades de producción, con instalaciones modernas y eficientes.',
+            courseDuration: '18 meses',
+            studentApply: 'En Progreso'
         },
         {
-            courseImg: 'images/courses/img6.jpg',
-            coursePrice: '$69',
-            coursePriceClass: 'paid',
+            courseImg: 'images/proyecto/proy6.jpg',
+            coursePrice: 'Consultas',
+            coursePriceClass: 'free',
             authorImg: 'images/user3.jpg',
-            authorName: 'David Warner',
-            title: 'Machine Learning A-Z™: Hands-On Python',
-            link: 'course-details',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-            courseDuration: '2 Weeks Long',
-            studentApply: 'Not Available'
+            authorName: 'Cliente F',
+            title: 'Restauración de Monumento Histórico',
+            link: 'project-details',
+            paragraphText: 'Somos expertos en la restauración de monumentos históricos, respetando su valor cultural y asegurando su preservación.',
+            courseDuration: '10 meses',
+            studentApply: 'Completado'
         }
     ]
+
 
 }

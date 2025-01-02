@@ -17,37 +17,37 @@ export class ContactPageComponent {
     contactInfoBox1 = [
         {
             icon: 'bx bx-map',
-            title: 'Our Address',
-            location: '175 5th Ave, New York, NY 10010, United States'
+            title: 'Dirección',
+            location: 'Huancayo, calle real s/n'
         }
     ]
     contactInfoBox2 = [
         {
             icon: 'bx bx-phone-call',
-            title: 'contact-us',
-            number: '(+44) - 45789 - 5789',
-            email: 'hello@wilo.com'
+            title: 'Contacto',
+            number: '987456123',
+            email: 'constrarna@gmail.com'
         }
     ]
     contactInfoBox3 = [
         {
             icon: 'bx bx-time-five',
-            title: 'Hours of Operation',
-            text1: 'Monday - Friday: 09:00 - 20:00',
-            text2: 'Sunday & Saturday: 10:30 - 22:00'
+            title: 'Horario',
+            text1: 'Lunes - Viernes: 09:00 - 20:00',
+            text2: 'Sabado & Domingo: 10:30 - 22:00'
         }
     ]
 
     sectionTitle = [
         {
-            subTitle: "Get In Touch",
-            title: 'Ready to Get Started?',
-            paragraphText: 'Your email address will not be published. Required fields are marked *'
+            subTitle: "Contáctenos",
+            title: '¿Listo para comenzar?',
+            paragraphText: 'Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *'
         }
     ]
     contactImage = [
         {
-            img: 'images/contact.png'
+            img: 'images/proyecto/imgcontac.png'
         }
     ]
 

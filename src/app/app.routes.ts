@@ -30,7 +30,7 @@ export const routes: Routes = [
     {path: 'index-4', component: HomeDemoFourComponent},
     {path: 'about-us', component: AboutPageComponent},
     {path: 'team', component: TeamPageComponent},
-    {path: 'services', component: ServicesPageComponent},
+    {path: 'servicio', component: ServicesPageComponent},
     {path: 'service-details', component: ServiceDetailsPageComponent},
     {path: 'case-studies', component: CaseStudiesPageComponent},
     {path: 'case-study-details', component: CaseStudyDetailsPageComponent},

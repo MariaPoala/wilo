@@ -1,8 +1,6 @@
 <!-- Footer -->
-<footer
-    class="bg-color footer-area"
-    [ngClass]="{'bg-white': router.url === '/index-2' || router.url === '/index-4' || router.url === '/courses'}"
->
+<footer class="bg-color footer-area"
+    [ngClass]="{'bg-white': router.url === '/index-2' || router.url === '/index-4' || router.url === '/courses'}">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
@@ -10,7 +8,9 @@
                     <a routerLink="/" class="logo">
                         <img src="images/logo.png" alt="logo">
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+                    <p>Constrarna es una empresa dedicada a la construcción y diseño de proyectos residenciales,
+                        comerciales y corporativos. Ofrecemos soluciones integrales, garantizando calidad, innovación y
+                        cumplimiento en cada proyecto.</p>
                     <ul class="social-link">
                         <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
                         <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
@@ -21,25 +21,25 @@
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6">
                 <div class="single-footer-widget pl-5">
-                    <h3>Explore</h3>
+                    <h3>Menú</h3>
                     <ul class="footer-links-list">
-                        <li><a routerLink="/">Home</a></li>
-                        <li><a routerLink="/about-us">About Us</a></li>
-                        <li><a routerLink="/blog-grid">Blog Grid</a></li>
-                        <li><a routerLink="/contact-us">Contact Us</a></li>
-                        <li><a routerLink="/case-studies">Case Studies</a></li>
+                        <li><a routerLink="/">Inicio</a></li>
+                        <li><a routerLink="/about-us">Nosotros</a></li>
+                        <li><a routerLink="/blog-grid">Servicio</a></li>
+                        <li><a routerLink="/contact-us">Proyectos</a></li>
+                        <li><a routerLink="/case-studies">Contacto</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
-                    <h3>Resources</h3>
+                    <h3>Servicios en los sectores: </h3>
                     <ul class="footer-links-list">
-                        <li><a routerLink="/service-details">Content Marketing</a></li>
-                        <li><a routerLink="/service-details">Digital Strategy</a></li>
-                        <li><a routerLink="/service-details">Email Marketing</a></li>
-                        <li><a routerLink="/service-details">SaaS Solutions</a></li>
-                        <li><a routerLink="/service-details">E-Commerce</a></li>
+                        <li><a routerLink="/service-details">Corporativos</a></li>
+                        <li><a routerLink="/service-details">Hoteleros</a></li>
+                        <li><a routerLink="/service-details">Residenciales</a></li>
+                        <li><a routerLink="/service-details">Restauración</a></li>
+                        <li><a routerLink="/service-details">Comerciales</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +49,8 @@
                     <ul class="footer-contact-info">
                         <li><i class='bx bx-map'></i> 175 5th Ave, New York, NY 10010, United States</li>
                         <li><i class='bx bx-phone-call'></i><a href="tel:+44587154756">+1 (123) 456 7890</a></li>
-                        <li><i class='bx bx-envelope'></i><a href="mailto:hello&#64;wilo.com">hello&#64;wilo.com</a></li>
+                        <li><i class='bx bx-envelope'></i><a href="mailto:hello&#64;wilo.com">hello&#64;wilo.com</a>
+                        </li>
                         <li><i class='bx bxs-inbox'></i><a href="tel:+557854578964">+55 785 4578964</a></li>
                     </ul>
                 </div>
@@ -58,12 +59,12 @@
         <div class="footer-bottom-area">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
-                    <p>© Wilo is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                    <p>© Constructora Constrarna 2025- Todos los derechos reservados.</p>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <ul>
-                        <li><a routerLink="/privacy-policy">Privacy Policy</a></li>
-                        <li><a routerLink="/terms-conditions">Terms & Conditions</a></li>
+                        <li><a routerLink="/privacy-policy">Politica de privacidad </a></li>
+                        <li><a routerLink="/terms-conditions">Terminos & Condiciones</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,10 +76,6 @@
 </footer>
 
 <!-- Back to Top -->
-<div
-    class="go-top"
-    *ngIf="isShow"
-    (click)="scrollToTop()"
->
+<div class="go-top" *ngIf="isShow" (click)="scrollToTop()">
     <i class="flaticon-up"></i>
 </div>
