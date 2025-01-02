@@ -19,31 +19,32 @@ export class AboutComponent {
     aboutContent = [
         {
             subTitle: 'About Us',
-            title: 'Drive Digital Revolution Through Data Science',
-            paragraphText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-            paragraphText2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            title: 'Construyendo el Futuro con Innovación y Calidad',
+            paragraphText1: 'En Constrarna, nos dedicamos a transformar ideas en proyectos tangibles, ofreciendo soluciones integrales en construcción, ferretería y alquiler de maquinaria. Nuestro compromiso es brindar excelencia en cada etapa, desde el diseño hasta la entrega final.',
+            paragraphText2: 'Con una trayectoria destacada, trabajamos con los más altos estándares de calidad, adaptándonos a las necesidades de nuestros clientes y garantizando resultados que superen sus expectativas. En Constrarna, construimos más que espacios, creamos confianza.',
+          
         }
     ]
     featuresList = [
         {
-            icon: 'images/icon1.png',
-            title: '10 Years',
-            subTitle: 'On the market'
+            icon: "images/funfacts/icon1.png",
+            title: '10+',
+            subTitle: 'Años de experiencia'
         },
         {
-            icon: 'images/icon2.png',
+            icon: "images/funfacts/icon2.png",
             title: '45+',
-            subTitle: 'Team members'
+            subTitle: 'Trabajadores'
         },
         {
-            icon: 'images/icon3.png',
-            title: '100%',
-            subTitle: 'Satisfaction rate'
+            icon: "images/funfacts/icon3.png",
+            title: '100+',
+            subTitle: 'Obras entregadas'
         },
         {
-            icon: 'images/icon4.png',
-            title: '80%',
-            subTitle: 'Senior scientist'
+            icon: "images/funfacts/icon4.png",
+            title: '90+',
+            subTitle: 'Clientes satisfechos'
         }
     ]
     aboutText = [

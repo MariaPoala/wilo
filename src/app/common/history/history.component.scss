@@ -1,3 +1,9 @@
+.image{
+   width: 300px;
+   height: 300px;
+   object-fit: cover;
+}
+
 .history-timeline {
     list-style-type: none;
     position: relative;
@@ -59,7 +65,7 @@
         }
         .timeline-content {
             background-color: var(--whiteColor);
-            padding: 30px;
+            padding: 10px;
 
             .content {
                 padding: {
@@ -110,7 +116,7 @@
             }
             .timeline-content {
                 text-align: center;
-                padding: 20px;
+                padding: 10px;
 
                 .content {
                     margin-bottom: 25px;

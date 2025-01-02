@@ -19,23 +19,23 @@ export class FunfactsComponent {
     singleFunfactsBox = [
         {
             icon: "images/funfacts/icon1.png",
-            title: '10 Years',
-            subTitle: 'On the market'
+            title: '10+',
+            subTitle: 'Años de experiencia'
         },
         {
             icon: "images/funfacts/icon2.png",
             title: '45+',
-            subTitle: 'Team members'
+            subTitle: 'Trabajadores'
         },
         {
             icon: "images/funfacts/icon3.png",
-            title: '100%',
-            subTitle: 'Satisfaction rate'
+            title: '100+',
+            subTitle: 'Obras entregadas'
         },
         {
             icon: "images/funfacts/icon4.png",
-            title: '30+',
-            subTitle: 'Senior scientist'
+            title: '90+',
+            subTitle: 'Clientes satisfechos'
         }
     ]
 

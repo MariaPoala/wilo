@@ -14,38 +14,35 @@ export class HistoryComponent {
     sectionTitle = [
         {
             subTitle: "Our History",
-            title: 'History Begins in 2010',
+            title: 'Nuestros Valores',
             paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
         }
     ]
     historyTimeline = [
         {
-            year: '2010',
-            date: 'February 20',
-            title: 'Founded',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
-            img: 'images/history/img1.jpg'
-        },
-        {
-            year: '2013',
-            date: 'January 14',
-            title: 'Global Success',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
-            img: 'images/history/img2.jpg'
-        },
-        {
-            year: '2016',
-            date: 'March 25',
-            title: 'Founded Data Center',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
+            name: 'Compromiso',
+            description: 'Nos dedicamos a cumplir con cada proyecto en tiempo y forma, priorizando la satisfacción de nuestros clientes y el respeto por los acuerdos establecidos.',
             img: 'images/history/img3.jpg'
         },
         {
-            year: '2023',
-            date: 'December 10',
-            title: 'International Award',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
-            img: 'images/history/img4.jpg'
+            name: 'Calidad',
+            description: 'Trabajamos con los mejores materiales, herramientas y estándares, garantizando resultados duraderos y de excelencia en cada obra.',
+            img: 'images/history/img3.jpg'
+        },
+        {
+            name: 'Innovación',
+            description: 'Implementamos tecnologías avanzadas y técnicas modernas para ofrecer soluciones eficientes y sostenibles en cada proyecto.',
+            img: 'images/history/img3.jpg'
+        },
+        {
+            name: 'Responsabilidad',
+            description: 'Mantenemos un firme compromiso con la seguridad, el medio ambiente y el bienestar de todos los involucrados en nuestros proyectos.'
+            , img: 'images/history/img3.jpg'
+        },
+        {
+            name: 'Confianza',
+            description: 'Construimos relaciones basadas en la transparencia y la comunicación, asegurando un trato honesto y profesional en todo momento.',
+            img: 'images/history/img3.jpg'
         }
     ]
 

@@ -1,11 +1,11 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-how-it-works',
     standalone: true,
-    imports: [RouterLink, NgFor],
+    imports: [RouterLink, NgFor,  NgIf],
     templateUrl: './how-it-works.component.html',
     styleUrl: './how-it-works.component.scss'
 })
@@ -13,48 +13,45 @@ export class HowItWorksComponent {
 
     sectionTitle = [
         {
-            subTitle: "How It's Work",
-            title: 'The Data Science Process',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            subTitle: "Como empresa",
+            title: 'Eventos importantes',
+            paragraphText: 'Conoce los hitos que han impulsado nuestro crecimiento y reafirmado nuestra posición como líderes en el sector.'
         }
     ]
     singleProcessBox = [
+
         {
             img: 'images/process/img1.png',
-            title: 'Frame the Problem',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            title: 'Fundación de Constrarna',
+            paragraphText: 'Inicio de operaciones como una constructora comprometida con la excelencia y la innovación en proyectos de construcción.',
             number: '1'
         },
         {
             img: 'images/process/img2.png',
-            title: 'Collect the Raw Data',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            title: 'Primer Proyecto Emblemático Completado',
+            paragraphText: 'Culminación exitosa de un proyecto de gran envergadura que marcó un hito en nuestra historia.',
             number: '2'
         },
         {
             img: 'images/process/img3.png',
-            title: 'Process the Data',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            title: 'Expansión a Nuevas Regiones',
+            paragraphText: 'Apertura de operaciones en nuevas ciudades o regiones, llevando nuestros servicios a más comunidades.',
             number: '3'
         },
         {
             img: 'images/process/img4.png',
-            title: 'Explore the Data',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            title: 'Reconocimiento a la Excelencia en Construcción',
+            paragraphText: 'Premio otorgado por entidades prestigiosas en reconocimiento a la calidad e innovación de nuestros proyectos.',
             number: '4'
         },
         {
             img: 'images/process/img5.png',
-            title: 'Perform In-depth Analysis',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            title: 'Inauguración de un Proyecto Insignia',
+            paragraphText: 'Apertura de un complejo residencial que resalta nuestro compromiso con el diseño y la funcionalidad.',
             number: '5'
-        },
-        {
-            img: 'images/process/img6.png',
-            title: 'Communicate Results',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-            number: '6'
         }
+
+
     ]
 
 }

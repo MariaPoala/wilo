@@ -10,19 +10,37 @@
             </div>
         }
         <div class="row">
-            @for (processBoxContent of singleProcessBox; track processBoxContent) {
-                <div class="col-lg-4 col-md-6">
+            <ng-container *ngFor="let processBoxContent of singleProcessBox; let i = index">
+                <!-- Los primeros tres elementos -->
+                <div *ngIf="i < 3" class="col-lg-4 col-md-6">
                     <div class="single-process-box">
-                        <div class="number">{{processBoxContent.number}}</div>
+                        <div class="number">{{ processBoxContent.number }}</div>
                         <div class="image">
                             <img [src]="processBoxContent.img" alt="image">
                         </div>
-                        <h3>{{processBoxContent.title}}</h3>
-                        <p>{{processBoxContent.paragraphText}}</p>
+                        <h3>{{ processBoxContent.title }}</h3>
+                        <p>{{ processBoxContent.paragraphText }}</p>
                     </div>
                 </div>
-            }
+            </ng-container>
         </div>
+        
+        <div class="row">
+            <ng-container *ngFor="let processBoxContent of singleProcessBox; let i = index">
+                <!-- Los elementos restantes -->
+                <div *ngIf="i >= 3" class="col-lg-6 col-md-6">
+                    <div class="single-process-box">
+                        <div class="number">{{ processBoxContent.number }}</div>
+                        <div class="image">
+                            <img [src]="processBoxContent.img" alt="image">
+                        </div>
+                        <h3>{{ processBoxContent.title }}</h3>
+                        <p>{{ processBoxContent.paragraphText }}</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        
     </div>
     <div class="circle-shape1">
         <img src="images/shape/circle-shape1.png" alt="image">

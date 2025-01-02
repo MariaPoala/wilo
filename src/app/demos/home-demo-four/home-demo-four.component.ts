@@ -17,7 +17,7 @@ import { FooterComponent } from '../../common/footer/footer.component';
 @Component({
     selector: 'app-home-demo-four',
     standalone: true,
-    imports: [NavbarComponent, BannerComponent, FeaturedServicesComponent, WhyChooseUsComponent, FunfactsComponent, ServicesComponent, TestimonialsComponent, IndustriesComponent, TeamComponent, CaseStudiesComponent, BlogComponent, GetStartedComponent, FooterComponent],
+    imports: [NavbarComponent, BannerComponent, FeaturedServicesComponent, WhyChooseUsComponent, FunfactsComponent, ServicesComponent, TestimonialsComponent, IndustriesComponent, TeamComponent, CaseStudiesComponent, BlogComponent, FooterComponent],
     templateUrl: './home-demo-four.component.html',
     styleUrl: './home-demo-four.component.scss'
 })

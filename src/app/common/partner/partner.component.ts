@@ -1,11 +1,11 @@
-import { NgClass, NgFor } from '@angular/common';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
 
 @Component({
     selector: 'app-partner',
     standalone: true,
-    imports: [NgFor, RouterLink, NgClass],
+    imports: [NgFor, RouterLink, NgClass, NgIf],
     templateUrl: './partner.component.html',
     styleUrl: './partner.component.scss'
 })
@@ -23,16 +23,16 @@ export class PartnerComponent {
             img: "images/partner/img2.png"
         },
         {
-            img: "images/partner/img3.png"
+            img: "images/proveedor/prov2.png"
         },
         {
-            img: "images/partner/img4.png"
+            img: "images/proveedor/prov4.png"
         },
         {
-            img: "images/partner/img5.png"
+            img: "images/proveedor/prov5.png"
         },
         {
-            img: "images/partner/img6.png"
+            img: "images/proveedor/prov6.png"
         }
     ]
 

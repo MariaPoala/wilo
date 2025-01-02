@@ -29,24 +29,24 @@ export class AboutUsComponent {
     ]
     featuresList = [
         {
-            icon: 'images/icon1.png',
-            title: '10 Years',
-            subTitle: 'On the market'
+            icon: "images/funfacts/icon1.png",
+            title: '10+',
+            subTitle: 'Años de experiencia'
         },
         {
-            icon: 'images/icon2.png',
+            icon: "images/funfacts/icon2.png",
             title: '45+',
-            subTitle: 'Team members'
+            subTitle: 'Trabajadores'
         },
         {
-            icon: 'images/icon3.png',
-            title: '100%',
-            subTitle: 'Satisfaction rate'
+            icon: "images/funfacts/icon3.png",
+            title: '100+',
+            subTitle: 'Obras entregadas'
         },
         {
-            icon: 'images/icon4.png',
-            title: '80%',
-            subTitle: 'Senior scientist'
+            icon: "images/funfacts/icon4.png",
+            title: '90+',
+            subTitle: 'Clientes satisfechos'
         }
     ]
 

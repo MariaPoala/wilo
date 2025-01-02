@@ -12,11 +12,7 @@
         @for (timelineBlock of historyTimeline; track timelineBlock) {
             <ol class="timeline history-timeline">
                 <li class="timeline-block">
-                    <div class="timeline-date">
-                        <span>{{timelineBlock.year}}</span>
-                        {{timelineBlock.date}}
-                        <sup>th</sup>
-                    </div>
+                   
                     <div class="timeline-icon">
                         <span class="dot-badge"></span>
                     </div>
@@ -24,13 +20,13 @@
                         <div class="row align-items-center">
                             <div class="col-lg-7 col-md-12">
                                 <div class="content">
-                                    <h3>{{timelineBlock.title}}</h3>
-                                    <p>{{timelineBlock.paragraphText}}</p>
+                                    <h3>{{timelineBlock.name}}</h3>
+                                    <p>{{timelineBlock.description}}</p>
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-12">
-                                <div class="image">
-                                    <img [src]="timelineBlock.img" alt="image">
+                                <div class="images">
+                                    <img [src]="timelineBlock.img" alt="image" class="image">
                                 </div>
                             </div>
                         </div>
