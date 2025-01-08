@@ -35,7 +35,7 @@ export const routes: Routes = [
     {path: 'case-studies', component: CaseStudiesPageComponent},
     {path: 'case-study-details', component: CaseStudyDetailsPageComponent},
     {path: 'gallery', component: GalleryPageComponent},
-    {path: 'courses', component: CoursesPageComponent},
+    {path: 'proyectos', component: CoursesPageComponent},
     {path: 'course-details', component: CourseDetailsPageComponent},
     {path: 'events', component: EventsPageComponent},
     {path: 'event-details', component: EventDetailsPageComponent},
