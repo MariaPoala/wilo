@@ -8,6 +8,35 @@
 <div class="courses-area ptb-100 bg-fafafb">
     <div class="container">
         <div class="row">
+            @for (coursesContent of proyectos; track coursesContent) {
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-course-box">
+                        <div class="courses-image">
+                            <a routerLink="/{{coursesContent.link}}" class="d-block image">
+                                <img [src]="coursesContent.img_url" alt="image" class="proyimg">
+                            </a>
+                            <!-- <div class="price shadow {{coursesContent.coursePriceClass}}">{{coursesContent.coursePrice}}</div> -->
+                        </div>
+                        <div class="courses-content">
+                            <div class="course-author d-flex align-items-center">
+                                <img [src]="coursesContent.authorImg" class="rounded-circle" alt="image">
+                                <span>{{coursesContent.authorName}}</span>
+                            </div>
+                            <h3><a routerLink="/{{coursesContent.link}}">{{coursesContent.nombre}}</a></h3>
+                            <p>{{coursesContent.descripcion}}</p>
+                            <ul class="courses-box-footer d-flex justify-content-between align-items-center">
+                                <li>
+                                    <i class='flaticon-agendas'></i> {{coursesContent.courseDuration}}
+                                </li>
+                                <li>
+                                    <i class='flaticon-team'></i> {{coursesContent.studentApply}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+
             @for (coursesContent of singleCoursesBox; track coursesContent) {
                 <div class="col-lg-4 col-md-6">
                     <div class="single-course-box">

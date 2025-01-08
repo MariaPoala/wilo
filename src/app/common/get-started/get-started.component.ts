@@ -18,7 +18,7 @@ export class GetStartedComponent {
     // Content
     projectStartImage = [
         {
-            img: 'images/project-start.png'
+            img: 'images/services/imgser.jpg'
         }
     ]
     projectStartContent = [

@@ -5,15 +5,35 @@ import { NavbarComponent } from '../../common/navbar/navbar.component';
 import { InnerPageBannerComponent } from '../../common/inner-page-banner/inner-page-banner.component';
 import { FooterComponent } from '../../common/footer/footer.component';
 import { GetStartedComponent } from '../../common/get-started/get-started.component';
+import { ServiciosService } from '../../shared/servicios.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'app-services-page',
     standalone: true,
-    imports: [RouterLink, NgFor, NavbarComponent, NavbarComponent, InnerPageBannerComponent, GetStartedComponent, FooterComponent],
+    imports: [RouterLink, NgFor, NavbarComponent, NavbarComponent, InnerPageBannerComponent, GetStartedComponent, FooterComponent, HttpClientModule],
+    providers: [ServiciosService],
     templateUrl: './services-page.component.html',
     styleUrl: './services-page.component.scss'
 })
 export class ServicesPageComponent {
+    servicios: any[] = [];
+
+    constructor(private clientsService: ServiciosService) { }
+    ngOnInit(): void {
+        this.listServios();
+    }
+    listServios() {     
+        this.clientsService.getConsServicio().subscribe(resp => {
+            if (resp.success) {
+                this.servicios = resp.data;
+            }
+        }, error => {
+            if (error.status === 400) {
+                console.log("Error en la solicitud");
+            }
+        });
+    }
 
     singleSolutionsBox = [
         {
@@ -74,8 +94,8 @@ export class ServicesPageComponent {
             linkIcon: 'flaticon-view',
             icon: 'flaticon-laptop',
         }
-        
-       
+
+
     ]
 
 }

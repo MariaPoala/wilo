@@ -4,16 +4,35 @@ import { RouterLink } from '@angular/router';
 import { NavbarComponent } from '../../common/navbar/navbar.component';
 import { InnerPageBannerComponent } from '../../common/inner-page-banner/inner-page-banner.component';
 import { FooterComponent } from '../../common/footer/footer.component';
+import { ServiciosService } from '../../shared/servicios.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'app-courses-page',
     standalone: true,
-    imports: [RouterLink, NgFor, NavbarComponent, InnerPageBannerComponent, FooterComponent],
+    imports: [RouterLink, NgFor, NavbarComponent, InnerPageBannerComponent, FooterComponent, HttpClientModule],
+    providers: [ServiciosService],
     templateUrl: './courses-page.component.html',
     styleUrl: './courses-page.component.scss'
 })
 export class CoursesPageComponent {
+ proyectos: any[] = [];
 
+    constructor(private clientsService: ServiciosService) { }
+    ngOnInit(): void {
+        this.listProyecto();
+    }
+    listProyecto() {
+        this.clientsService.getConsProyecto().subscribe(resp => {
+            if (resp.success) {
+                this.proyectos = resp.data;
+            }
+        }, error => {
+            if (error.status === 400) {
+                console.log("Error en la solicitud");
+            }
+        });
+    }
     singleCoursesBox = [
         {
             courseImg: 'images/proyecto/proy1.jpg',

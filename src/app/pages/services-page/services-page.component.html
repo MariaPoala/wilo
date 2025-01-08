@@ -1,24 +1,43 @@
 <app-navbar />
 
-<app-inner-page-banner
-    [pageTitle]="'Servicios'"
-/>
+<app-inner-page-banner [pageTitle]="'Servicios'" />
 
 <!-- Services -->
 <div class="solutions-area pt-100 pb-75">
     <div class="container">
+        <div class="row" >
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let servicio of servicios">
+                <div class="single-solution-box">
+                    <div class="icon">
+                        <div class="icon">
+                            <i class="{{servicio.img_url}}"></i>
+                        </div>
+                    </div>
+                    <h3>{{servicio.nombre}}</h3>
+                    <p>{{servicio.descripcion}}</p>
+                    <!-- <a routerLink="/{{servicio.link}}" class="view-details-btn">mas detalle</a> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="solutions-area pt-100 pb-75">
+    <div class="container">
         <div class="row">
             @for (solutionsBoxContent of singleSolutionsBox; track solutionsBoxContent) {
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-solution-box">
-                        <div class="icon">
-                            <i class="{{solutionsBoxContent.icon}}"></i>
-                        </div>
-                        <h3><a routerLink="/{{solutionsBoxContent.link}}">{{solutionsBoxContent.title}}</a></h3>
-                        <p>{{solutionsBoxContent.paragraphText1}}</p>
-                        <a routerLink="/{{solutionsBoxContent.link}}" class="view-details-btn">{{solutionsBoxContent.linkText}}</a>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-solution-box">
+                    <div class="icon">
+                        <i class="{{solutionsBoxContent.icon}}"></i>
                     </div>
+                    <h3><a routerLink="/{{solutionsBoxContent.link}}">{{solutionsBoxContent.title}}</a></h3>
+                    <p>{{solutionsBoxContent.paragraphText1}}</p>
+                    <!-- <a routerLink="/{{solutionsBoxContent.link}}"
+                        class="view-details-btn">{{solutionsBoxContent.linkText}}</a> -->
                 </div>
+            </div>
             }
         </div>
     </div>

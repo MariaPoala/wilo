@@ -16,4 +16,14 @@ export class ServiciosService {
     const apiUrl = this.envUrl.urlAddress + 'listar-servicios/';
     return this.httpClient.get<any>(apiUrl);
   }
+
+  getConsProyecto() {
+    const apiUrl = this.envUrl.urlAddress + 'listar-proyectos/';
+    return this.httpClient.get<any>(apiUrl);
+  }
+
+  postCorreo(body: any){
+    const apiUrl = this.envUrl.urlAddressProduccion + '/utils/enviar/email-contacto/constrarna/'
+    return this.httpClient.post<any>(apiUrl, body);
+  }
 }

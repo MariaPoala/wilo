@@ -73,37 +73,42 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                         <div class="row">
-                            <div class="col-lg-12 col-md-6">
-                                <div class="form-group mb-3">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombres">
-                                </div>
+                          <div class="col-lg-12 col-md-6">
+                            <div class="form-group mb-3">
+                              <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Nombres">
                             </div>
-                            <div class="col-lg-12 col-md-6">
-                                <div class="form-group mb-3">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Correo">
-                                </div>
+                          </div>
+                          <div class="col-lg-12 col-md-6">
+                            <div class="form-group mb-3">
+                              <input type="email" formControlName="email" class="form-control" id="email" placeholder="Correo">
                             </div>
-                            <div class="col-lg-12 col-md-12">
-                                <div class="form-group mb-3">
-                                    <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Celular">
-                                </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12">
+                            <div class="form-group mb-3">
+                              <input type="text" formControlName="telefono" class="form-control" id="telefono" placeholder="Celular">
                             </div>
-                            <div class="col-lg-12 col-md-12">
-                                <div class="form-group mb-3">
-                                    <textarea name="message" id="message" class="form-control" cols="30" rows="6" placeholder="Escribe tu mensaje.."></textarea>
-                                </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12">
+                            <div class="form-group mb-3">
+                              <textarea formControlName="message" class="form-control" cols="30" rows="6" placeholder="Escribe tu mensaje.."></textarea>
                             </div>
-                            <div class="col-lg-12 col-md-12">
-                                <button type="submit" class="default-btn">
-                                    <i class="flaticon-tick"></i>
-                                    Enviar Mensaje
-                                    <span></span>
-                                </button>
-                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12">
+                            <button type="submit" class="default-btn">
+                              <i class="flaticon-tick"></i>
+                              Enviar Mensaje
+                              <span></span>
+                            </button>
+                          </div>
                         </div>
-                    </form>
+                        <div *ngIf="mensajeExito" style="background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-top: 10px;">
+                            Correo enviado con éxito. ¡Gracias por contactarnos!
+                          </div>
+                          
+                      </form>
+                      
                 </div>
             </div>
         </div>
